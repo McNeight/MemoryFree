@@ -15,7 +15,6 @@ install:
   - arduino --install-boards arduino:samd 2>&1
   - arduino --install-boards esp8266:esp8266 2>&1
   - arduino --install-boards adafruit:avr 2>&1
-  - arduino --install-library TinyWireM 2>&1
   - arduino --pref "compiler.warning_level=all" --save-prefs
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/FreeMemory/FreeMemory.ino

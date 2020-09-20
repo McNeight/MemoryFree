@@ -19,7 +19,7 @@ install:
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/FreeMemory/FreeMemory.ino
   - arduino --verify --board arduino:sam:arduino_due_x $PWD/examples/FreeMemory/FreeMemory.ino
-  - arduino --verify --board arduino:samd:zero $PWD/examples/FreeMemory/FreeMemory.ino
+  - arduino --verify --board arduino:samd:arduino_zero_edbg $PWD/examples/FreeMemory/FreeMemory.ino
   - arduino --verify --board esp8266:esp8266:huzzah $PWD/examples/FreeMemory/FreeMemory.ino
   - arduino --verify --board arduino:avr:leonardo $PWD/examples/FreeMemory/FreeMemory.ino
   - arduino --verify --board adafruit:avr:trinket5 $PWD/examples/FreeMemory/FreeMemory.ino
